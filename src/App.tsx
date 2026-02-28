@@ -35,9 +35,7 @@ function App() {
       <section>
         <h2>Abstract</h2>
         <div className="abstract">
-          {abstract.split('
-
-').map((para, i) => (
+          {abstract.split('\n\n').map((para, i) => (
             <p key={i}>{para}</p>
           ))}
         </div>
