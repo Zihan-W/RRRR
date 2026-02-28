@@ -1,0 +1,115 @@
+:root {
+  --primary-color: #4285f4;
+  --secondary-color: #34a853;
+  --text-color: #3c4043;
+  --title-color: #202124;
+  --bg-color: #ffffff;
+  --max-width: 900px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Google Sans', sans-serif;
+  color: var(--title-color);
+  text-align: center;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+header {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.authors {
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+}
+
+.affiliations {
+  margin-bottom: 30px;
+  color: #70757a;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.link-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: #363636;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.link-btn:hover {
+  background-color: #000;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.abstract {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.bibtex-box {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  text-align: left;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 1px solid #eee;
+  color: #70757a;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+}
